@@ -1,0 +1,130 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[a4paper,margin=1.45cm]{geometry}
+\usepackage{fontspec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{\thepage}
+
+\setmainfont{TeX Gyre Pagella}
+\definecolor{titlecolor}{HTML}{18314A}
+\definecolor{textgray}{HTML}{4D5B69}
+\titleformat{\section}{\large\bfseries\color{titlecolor}}{}{0pt}{}
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+\setlist[itemize]{leftmargin=1.5em, itemsep=2pt, topsep=3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+
+\newcommand{\entry}[4]{%
+  \textbf{#1} \hfill #2\\
+  {\color{textgray}#3} \hfill {#4}\\[-2pt]
+}
+
+\begin{document}
+
+{\LARGE\bfseries\color{titlecolor} Qun Niu}\\[4pt]
+Beijing Institute of Technology \quad Ph.D. Candidate in M.E. (Expected graduation: Dec. 2026)\\
+I am currently seeking suitable industry positions or postdoctoral opportunities\\
+Email: \href{mailto:nq_eecm@163.com}{nq\_eecm@163.com} \quad Mobile: 15601280520\\
+Homepage: \href{https://beta1scat.github.io/academic-cv/}{https://beta1scat.github.io/academic-cv/}
+
+\section*{Profile}
+I am a Ph.D. candidate in Mechanical Engineering at Beijing Institute of Technology. My research focuses on robot perception, motion planning, and grasp planning, especially for grasping in cluttered or unstructured scenes. I work on integrating 3D vision, geometric reasoning, kinematic analysis, and task execution into coherent robotic systems. My recent work spans inverse kinematics, hand-eye and tool calibration, point-cloud pose estimation, scene understanding through geometric primitive fitting, and language-guided grasping. In addition to geometry-driven and analytical methods, I also incorporate learning-based methods into robotic tasks and am currently exploring VLA and reinforcement learning. I am experienced with C/C++, Python, PyTorch, and ROS, enjoy challenging problems, and adapt quickly to new methods and tools.
+
+\section*{Education}
+\entry{Beijing Institute of Technology}{Sep. 2020 -- Present}{Mechanical Engineering}{Ph.D.}
+\entry{Beijing University of Technology}{Sep. 2017 -- Jun. 2020}{Mechanical Engineering}{M.S.}
+\entry{Hebei University of Science and Technology}{Sep. 2013 -- Jun. 2017}{Process Equipment and Control Engineering}{B.S.}
+
+\section*{Research Interests}
+\begin{itemize}
+	\item Robot perception: scene segmentation, point-cloud classification, pose estimation, geometric fitting, and 3D vision system integration.
+	\item Kinematics, motion planning, and calibration: inverse kinematics, path planning, collision detection, hand-eye calibration, and tool coordinate calibration.
+	\item Vision-guided grasping: hand-eye calibration, tool coordinate calibration, grasp pose generation, and grasp filtering.
+	\item Language-guided grasping: combining multimodal object localization, geometric reasoning, and task constraints for grasp planning.
+\end{itemize}
+
+\section*{Publications}
+\begin{itemize}
+	\item \textbf{Niu, Qun}, Zhang, Chuanlin, Zhang, Tianyu, Zhao, Jieliang, Fu, Tie, and Chen, Xuemei. Language-Guided Robot Grasping Based on Basic Geometric Shape Fitting. \textit{Advanced Intelligent Systems}, e202501276, 2025.
+	\item \textbf{Niu, Qun}, Zhao, Jieliang, Liang, Lulu, Xing, Jin, Li, Hongkun, and Wang, Ziru. A General Framework for the Analytical Inverse Kinematics Solution of Industrial Robots. \textit{Proceedings of the Institution of Mechanical Engineers, Part C: Journal of Mechanical Engineering Science}, 239(12):4499--4511, 2025.
+	\item \textbf{Niu, Qun}, Wang, Ziru, Li, Hongkun, and Zhao, Jieliang. A Parameters Optimization Framework for Pose Estimation Algorithm Based on Point Cloud. \textit{Journal of Physics: Conference Series}, 2746(1):012039, 2024.
+	\item \textbf{Niu, Qun}, Zhao, Jieliang, Liang, Lulu, and Xing, Jin. Dynamic Vertical Climbing Mechanism of Chinese Dragon-Li Cats Based on the Linear Inverted Pendulum Model. \textit{Journal of Bionic Engineering}, 20(1):136--145, 2023.
+	\item \textbf{Niu, Qun}, et al. A Simultaneous Hand-Eye and Tool Coordinate System Calibration Framework for Robotic Grasping. \textit{Intelligent Service Robotics} (under review).
+	\item \textbf{Niu, Qun}, et al. Enhancing Scene Perception: Shape Fitting with Geometric Primitives. \textit{Intelligent Service Robotics} (under review).
+\end{itemize}
+
+\section*{Contribution Overview}
+\begin{itemize}
+	\item Proposed a general analytical inverse kinematics framework that enables industrial robots with the same configuration to share one D-H-parameter-based solver.
+	\item Introduced a joint calibration model for hand-eye transformation and tool coordinates to reduce error propagation in robotic grasping.
+	\item Built a parameter optimization framework for point-cloud pose estimation to reduce repetitive manual tuning for different objects.
+	\item Developed a scene understanding pipeline that combines segmentation, point-cloud classification, and geometric primitive fitting for interpretable perception.
+	\item Proposed a language-guided model-free grasping method that integrates multimodal localization, primitive fitting, and task-oriented grasp selection.
+	\item Analyzed dynamic vertical climbing in domestic cats with a linear inverted pendulum model and clarified the key mechanism behind dynamic wall traversal without static adhesion.
+\end{itemize}
+
+\section*{Patents}
+\begin{itemize}
+	\item Zhao, Jieliang; Niu, Qun; et al. Adjustable dual-slider ramp experimental platform with tunable height and angle. Authorized invention patent, CN202110431126.4.
+	\item Niu, Qun; Zhao, Jieliang; et al. Joint-angle generation method for robots and robot system. Authorized invention patent, CN202310966039.8.
+	\item Niu, Qun; Zhao, Jieliang; et al. Vision-guided robotic system and robot calibration method. Authorized invention patent, CN202410192128.6.
+	\item Niu, Qun; Zhao, Jieliang; et al. Pose-estimation model configuration method. Pose-estimation method. Under substantive examination, CN202311698845.8.
+	\item In addition, he has four collaborative papers on quadruped and wall-climbing robots and six more robot-related authorized or pending patents.
+\end{itemize}
+
+\section*{Academic Projects}
+\entry{Humanoid Motion Coordination for a Dual-Arm Robot}{Sep. 2017 -- Jun. 2020}{Core member}{Academic project}
+Designed a cable-driven seven-DOF manipulator, established its D-H-based kinematic model, proposed an inverse kinematics algorithm for humanoid motion, and developed Cartesian-space and joint-space planning methods for shaft-hole assembly tasks.
+
+\entry{Biomimetic Quadruped Robot with Integrated Joint Actuation}{Sep. 2020 -- Aug. 2022}{Core member}{Academic project}
+Worked on integrated joint actuator development inspired by insect leg joints and investigated the mechanism of cat-inspired dynamic vertical climbing. High-speed camera data were used to analyze vertical climbing behavior with the SLIP model, and an elastic actuator with active elasticity and passive restraint was designed.
+
+\entry{Target Detection and Path Planning Algorithms for Robotic Grasping}{Aug. 2022 -- Aug. 2024}{Core member}{Academic project}
+Focused on robot algorithms, visual algorithms, and grasp planning for disorderly grasping tasks, including kinematics, path planning, collision detection, hand-eye calibration, pose estimation, grasp pose generation, and grasp filtering.
+
+\section*{Internship Experience}
+\entry{Beijing Modi Technology Co., Ltd.}{Apr. 2018 -- Apr. 2019}{R\&D Department}{Internship}
+Developed forward and inverse kinematics algorithms, joint-space planning, and Cartesian-space planning for a biomimetic four-axis manipulator based on lever mechanisms. Also worked on interface development and coordinated control for a multi-mode cell-culture bioreactor.
+
+\entry{Institute of Automation, Chinese Academy of Sciences}{Apr. 2019 -- May 2020}{Research Center for Digital Content Technology and Service}{Internship}
+Participated in polishing-path planning based on quadric surfaces, robot and force-controlled polishing head programming, on-site debugging, and project delivery. Also worked on multi-axis synchronized PLC control for an automatic screw-locking machine and waterproof housing design for a snake robot.
+
+\entry{Beijing Transfertech Co., Ltd.}{Aug. 2022 -- Aug. 2024}{R\&D Department}{Internship}
+Developed and maintained robot kinematics, motion planning, and collision detection algorithms. Contributed to grasp pose generation and filtering, exploratory work on model-free grasping, parameter optimization for pose estimation, hand-eye calibration, and a Blazor-based scene configuration module for robot and environment visualization.
+
+\entry{Beijing Galbot Co., Ltd.}{Aug. 2025 -- Feb. 2026}{Algorithm Engineering}{Internship}
+Participates in embodied intelligence algorithm development for indoor mobile manipulation platforms, covering perception, decision-making, and control. Contributes grasping skills for a robotic shop-assistant scenario in the Beijing Galbot Co., Ltd. capsule project using both traditional and learning-based methods on the G1 robot.
+
+\section*{Skills}
+\begin{itemize}
+	\item Programming and tools: C/C++, Python, PyTorch, ROS, Blazor.
+	\item Robot algorithms: kinematics, inverse kinematics, path planning, collision detection, grasp pose generation, and grasp filtering.
+	\item Vision and perception: hand-eye calibration, pose estimation, point-cloud processing, scene segmentation, geometric fitting, and 3D vision systems.
+	\item Learning-based methods: practical use of learning-based methods in robotic tasks, with current interest in VLA and reinforcement learning.
+\end{itemize}
+
+\section*{Personal Strengths}
+\begin{itemize}
+	\item Enjoys digging into technical problems and sustaining effort on complex tasks.
+	\item Motivated by challenging work and willing to take on unfamiliar problems.
+	\item Adapts quickly to new research topics, engineering settings, and technical tools.
+\end{itemize}
+
+\section*{Honors and Awards}
+\begin{itemize}
+	\item Outstanding Graduate Student Award, Beijing University of Technology.
+	\item First Prize for Graduate Academic Excellence.
+	\item Graduate Research Excellence Award.
+	\item Second Prize, Hebei Mechanical Design Innovation Competition.
+	\item Basketball awards: one municipal-level award and five university-level awards.
+\end{itemize}
+
+\end{document}

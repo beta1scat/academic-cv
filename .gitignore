@@ -1,0 +1,10 @@
+latex/build-*/
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.xdv
+
+/build-*/
+/my_work_md

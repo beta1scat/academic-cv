@@ -1,0 +1,138 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[a4paper,margin=1.45cm]{geometry}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{\thepage}
+
+\setmainfont{TeX Gyre Pagella}
+\setCJKmainfont{FandolSong-Regular}
+\setCJKsansfont{FandolHei-Regular}
+\setCJKmonofont{FandolFang-Regular}
+
+\definecolor{titlecolor}{HTML}{18314A}
+\definecolor{accent}{HTML}{8A5A2B}
+\definecolor{textgray}{HTML}{4D5B69}
+
+\titleformat{\section}{\large\bfseries\color{titlecolor}}{}{0pt}{}
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+\setlist[itemize]{leftmargin=1.5em, itemsep=2pt, topsep=3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+
+\newcommand{\entry}[4]{%
+  \textbf{#1} \hfill #2\\
+  {\color{textgray}#3} \hfill {#4}\\[-2pt]
+}
+
+\begin{document}
+
+{\LARGE\bfseries\color{titlecolor} 牛群}\\[4pt]
+北京理工大学 \quad 机械工程博士在读（预计 2026 年 12 月前毕业）\\
+目前正在寻找合适的\textbf{企业岗位}或\textbf{博士后}机会\\
+邮箱：\href{mailto:nq_eecm@163.com}{nq\_eecm@163.com} \quad 手机：15601280520\\
+主页：\href{https://beta1scat.github.io/academic-cv/}{https://beta1scat.github.io/academic-cv/}
+
+\section*{个人简介}
+目前在北京理工大学攻读机械工程博士学位，研究方向聚焦机器人感知、运动规划与抓取规划，主要面向复杂抓取场景中的感知、建模与执行问题。研究工作围绕三维视觉、几何推理、运动学分析、手眼标定、位姿估计、场景理解以及语言引导抓取等方向展开，重点关注如何将感知、建模与执行过程组织为一套连贯的机器人算法链路。在以几何建模和解析方法为主推进研究的同时，也尝试将机器学习方法引入机器人任务，并持续关注 VLA、强化学习等具身智能方向。参与过基于 3D 视觉的机器人抓取系统、七自由度双臂机器人、打磨机器人、爬壁与清洁机器人等项目研发，熟悉 C/C++、Python、PyTorch、ROS 等工具。喜欢钻研问题，乐于接受具有挑战性的任务，同时具备较强的适应能力。
+
+\section*{教育经历}
+\entry{北京理工大学}{2020.09 -- 至今}{机械工程}{博士}
+\entry{北京工业大学}{2017.09 -- 2020.06}{机械工程}{硕士}
+\entry{河北科技大学}{2013.09 -- 2017.06}{过程装备与控制工程}{本科}
+
+\section*{研究方向}
+\begin{itemize}
+	\item 机器人感知：场景分割、点云分类、位姿估计、几何体拟合与三维视觉系统集成。
+	\item 运动学、运动规划与标定：逆运动学、路径规划、碰撞检测、手眼标定与工具坐标系标定等关键算法。
+	\item 视觉引导抓取：手眼标定、工具坐标系标定、抓取位姿生成与过滤。
+	\item 语言引导抓取：结合多模态目标定位、几何推理与任务约束进行抓取规划。
+\end{itemize}
+
+\section*{代表性论文}
+\begin{itemize}
+	\item \textbf{Niu, Qun}, Zhang, Chuanlin, Zhang, Tianyu, Zhao, Jieliang, Fu, Tie, and Chen, Xuemei. Language-Guided Robot Grasping Based on Basic Geometric Shape Fitting. \textit{Advanced Intelligent Systems}, e202501276, 2025.
+	\item \textbf{Niu, Qun}, Zhao, Jieliang, Liang, Lulu, Xing, Jin, Li, Hongkun, and Wang, Ziru. A General Framework for the Analytical Inverse Kinematics Solution of Industrial Robots. \textit{Proceedings of the Institution of Mechanical Engineers, Part C: Journal of Mechanical Engineering Science}, 239(12):4499--4511, 2025.
+	\item \textbf{Niu, Qun}, Wang, Ziru, Li, Hongkun, and Zhao, Jieliang. A Parameters Optimization Framework for Pose Estimation Algorithm Based on Point Cloud. \textit{Journal of Physics: Conference Series}, 2746(1):012039, 2024.
+	\item \textbf{Niu, Qun}, Zhao, Jieliang, Liang, Lulu, and Xing, Jin. Dynamic Vertical Climbing Mechanism of Chinese Dragon-Li Cats Based on the Linear Inverted Pendulum Model. \textit{Journal of Bionic Engineering}, 20(1):136--145, 2023.
+	\item \textbf{Niu, Qun}, et al. A Simultaneous Hand-Eye and Tool Coordinate System Calibration Framework for Robotic Grasping. \textit{Intelligent Service Robotics} (under review).
+	\item \textbf{Niu, Qun}, et al. Enhancing Scene Perception: Shape Fitting with Geometric Primitives. \textit{Intelligent Service Robotics} (under review).
+\end{itemize}
+
+\section*{论文贡献概览}
+\begin{itemize}
+	\item 提出通用解析逆运动学框架，使同构型工业机器人可共享一套基于 D-H 参数的求解方法。
+	\item 提出手眼关系与工具坐标系联合标定模型，降低分步标定带来的误差传递。
+	\item 构建面向点云位姿估计算法的参数优化框架，减少不同物体上的人工调参成本。
+	\item 结合 SAM、点云分类与几何拟合方法，实现复杂场景中的目标理解与基本几何体建模。
+	\item 提出语言引导的无模型抓取方法，将多模态定位、几何体拟合与任务导向抓取选择整合起来。
+	\item 基于线性倒立摆模型分析家猫动态垂直爬壁行为，揭示非静态附着条件下动态越障的关键机理。
+\end{itemize}
+
+\section*{发明专利}
+\begin{itemize}
+	\item 赵杰亮，牛群等. 一种高度和角度可调节的双滑块式斜坡实验台：授权，CN202110431126.4[P].
+	\item 牛群，赵杰亮等. 用于机器人的关节角度生成方法及机器人系统：授权，CN202310966039.8[P].
+	\item 牛群，赵杰亮等. 基于视觉引导的机器人系统及机器人系统校准方法：授权，CN202410192128.6[P].
+	\item 牛群，赵杰亮等. 位姿估计模型配置方法及位姿估计方法：实审，CN202311698845.8[P].
+	\item 另有四足机器人和爬壁机器人相关的合作论文 4 篇，其他机器人相关授权或实审专利 6 项。
+\end{itemize}
+
+\section*{在校项目经历}
+\entry{双臂机器人拟人化动作协调控制方法研究}{2017.09 -- 2020.06}{项目骨干}{在校项目}
+基于线驱动设计七自由度机械臂本体结构，建立 D-H 运动学模型，提出适用于拟人化动作的逆运动学求解算法，并面向轴孔装配任务开发笛卡尔空间和关节空间路径规划算法。
+
+\entry{基于一体化关节的仿生四足越障机器人研究}{2020.09 -- 2022.08}{项目骨干}{在校项目}
+负责基于昆虫腿部关节的一体化关节驱动器开发和基于家猫的动态垂直越障机理研究，通过高速摄像机采集家猫动态垂直爬壁动作，基于 SLIP 模型开展动力学分析，并设计具有主动弹性驱动和被动弹性牵制的弹性驱动器。
+
+\entry{面向抓取任务的目标检测与路径规划算法研究}{2022.08 -- 2024.08}{项目骨干}{在校项目}
+主要负责无序抓取任务中的机器人算法、视觉算法和抓取规划算法研究与开发。机器人相关算法包括运动学、路径规划和碰撞检测；视觉算法包括手眼标定和位姿估计；抓取规划包括抓取位姿生成和过滤算法。
+
+\section*{实习经历}
+\entry{北京墨狄科技有限公司}{2018.04 -- 2019.04}{研发部}{实习}
+仿生四轴机械臂：参与基于杠杆原理的四自由度机械臂正逆运动学求解、关节空间和笛卡尔空间路径规划算法开发。生物反应器：参与多运行模式细胞培养生物反应器开发，负责交互界面与电驱动磁力搅拌协调控制。
+
+\entry{中国科学院自动化研究所}{2019.04 -- 2020.05}{数字内容技术与服务研究中心}{实习}
+打磨机器人：参与基于二次曲面的打磨路径规划、机器人与力控浮动磨头控制程序开发、现场调试与项目交付。自动锁螺丝机：参与基于 PLC 的多轴同步控制程序开发及基于 PID 控制器的螺栓预紧力控制算法开发。蛇形机器人：参与防水外壳设计，兼顾模块化连接与运动灵活性要求。
+
+\entry{北京迁移科技有限公司}{2022.08 -- 2024.08}{研发部}{实习}
+负责机器人运动学、路径规划和碰撞检测等算法开发与维护，参与抓取位姿生成与过滤、非注册抓取算法预研、位姿估计参数优化和手眼标定，并基于 Blazor 开发场景配置模块，实现机器人与环境物体的维护及可视化。
+
+\entry{北京银河通用机器人有限公司}{2025.08 -- 2026.02}{算法工程}{实习}
+担任具身智能算法实习生，参与机器人与人工智能算法研发，面向室内移动操作平台的感知、决策与控制。参与银河通用太空舱项目，基于传统方法和学习方法针对 G1 机器人开发机器人店员在太空舱场景中的抓取技能。
+
+\section*{技能}
+\begin{itemize}
+	\item 编程与开发：C/C++、Python、PyTorch、ROS、Blazor。
+	\item 机器人算法：运动学、逆运动学、路径规划、碰撞检测、抓取位姿生成与过滤。
+	\item 视觉与感知：手眼标定、位姿估计、点云处理、场景分割、几何体拟合、3D 视觉系统。
+	\item 基于学习的方法：将学习方法应用于机器人任务，当前关注 VLA、强化学习等具身智能方向。
+\end{itemize}
+
+\section*{个人特点}
+\begin{itemize}
+	\item 喜欢钻研问题，面对复杂任务能够持续投入并主动推进。
+	\item 乐于接受具有挑战性的工作，对新问题和新方向保持较强探索意愿。
+	\item 适应能力较强，能够较快进入新的研究主题、工程场景与技术栈。
+\end{itemize}
+
+\section*{获奖情况}
+\begin{itemize}
+	\item 北京工业大学优秀研究生奖。
+	\item 研究生学习优秀一等奖。
+	\item 研究生科研优秀奖。
+	\item 河北省大学生机械设计创新大赛二等奖。
+	\item 篮球赛奖项：市级 1 项，校级 5 项。
+\end{itemize}
+
+\end{document}
