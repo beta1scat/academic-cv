@@ -1,6 +1,6 @@
 const toggles = Array.from(document.querySelectorAll(".lang-toggle"));
 const body = document.body;
-const storageKey = "academic-cv-lang";
+const storageKey = "beta1scat-github-io-lang";
 const previewTriggers = Array.from(document.querySelectorAll(".publication-figure"));
 const lightbox = document.querySelector(".image-lightbox");
 const lightboxBackdrop = document.querySelector(".lightbox-backdrop");

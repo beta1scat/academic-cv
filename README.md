@@ -1,4 +1,4 @@
-# academic-cv
+# beta1scat.github.io
 
 Static bilingual academic homepage for GitHub Pages, together with Chinese and English LaTeX resumes.
 
@@ -39,7 +39,7 @@ Then open `http://localhost:8000/`.
 
 ## Deploy to GitHub Pages
 
-1. Create a GitHub repository named `academic-cv`.
+1. Create a GitHub repository named `beta1scat.github.io`.
 2. Push all files in this directory to the repository.
 3. In GitHub, open `Settings -> Pages`.
 4. Set `Build and deployment` to `Deploy from a branch`.
@@ -49,7 +49,7 @@ Then open `http://localhost:8000/`.
 The expected address format is:
 
 ```text
-https://<github-username>.github.io/academic-cv/
+https://beta1scat.github.io/
 ```
 
 ## Migrate to object storage or CDN later
